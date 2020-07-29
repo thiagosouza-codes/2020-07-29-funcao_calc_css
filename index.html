@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Função CALC - CSS</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        background-color: #151515;
+        height: 100vh;
+        width: 100%;
+      }
+
+      main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: 100%;
+      }
+
+      main > img {
+        width: 150px;
+      }
+
+      main > div.content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        background-color: #fed636;
+        width: calc(100% - 158px);
+      }
+
+      main > div.content > div {
+        background-color: #4b5;
+        width: calc(100% - 100px - 150px - 16px);
+      }
+
+      main > div.content > div:first-child {
+        background-color: #d56;
+        width: 100px;
+      }
+
+      main > div.content > div:last-child {
+        background-color: #d95;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="https://avatars3.githubusercontent.com/u/6491925?v=4" alt="" />
+      <div class="content">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </main>
+  </body>
+</html>
